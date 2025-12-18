@@ -1,0 +1,84 @@
+/* PAGE BACKGROUND */
+.profile-page {
+  background-color: #f3efd6;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* MAIN CONTAINER */
+.profile-container {
+  max-width: 750px;
+}
+
+/* HEADER */
+.profile-header {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.profile-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #4f6a4f;
+}
+
+.profile-name {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* CARD */
+.profile-card {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* DETAILS GRID */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 20px;
+  font-size: 14px;
+}
+
+/* VIEW BUTTON */
+.view-btn {
+  background-color: #d19a2a;
+  border: none;
+  padding: 3px 14px;
+  font-size: 12px;
+}
+
+.view-btn:hover {
+  background-color: #b8851f;
+}
+
+/* ACTION BUTTONS */
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.delete-btn,
+.edit-btn {
+  background-color: #d19a2a;
+  border: none;
+  padding: 8px 25px;
+  font-size: 14px;
+}
+
+.delete-btn:hover,
+.edit-btn:hover {
+  background-color: #b8851f;
+}

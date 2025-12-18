@@ -1,0 +1,157 @@
+.car-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1300px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  height: auto;
+}
+
+/* LEFT */
+.left-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.car-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.brand-details p {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--secondary-blue);
+}
+
+.price span {
+  font-size: 18px;
+  color: #444;
+}
+
+.maintenance { color: orange; }
+.available {color: var(--secondary-green);font-weight: bold;}
+.not-available { color: red; }
+
+.main-image {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 12px;
+}
+
+.image-gallery img {
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.right-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.spec-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.spec-card {
+  background: #f9f9f9;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.spec-label {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.book-btn {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 18px;
+  background: var(--main-yellow);
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.equipment {
+  margin-top: 30px;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.description, .details, .damage-notes {
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 992px) {
+  .car-details-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-gallery {
+    flex-wrap: wrap;
+  }
+
+  .image-gallery img {
+    width: 48%;
+  }
+}

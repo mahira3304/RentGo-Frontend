@@ -1,0 +1,48 @@
+#navBar {
+  height: 12vh;
+  width: 100%;
+  background-color: var(--main-green);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+#logoId {
+  height: 70px;     
+  width: auto;
+}
+#navText .nav-link {
+  color: white;
+  font-weight: 500;
+  margin-left: 32px; 
+  font-size:15px;
+}
+#navText .nav-link:hover {
+  color: #d2d2d2;
+}
+#navText button {
+  background-color: var(--main-yellow);     
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  color: white;
+  font-weight: 600;
+  margin-left: 32px;
+  transition: 0.2s ease-in-out;
+}
+
+#navText button:hover {
+  background-color: var(--main-yellow);
+} 
+.navbar-collapse.show {
+  background-color: var(--main-green);
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.loginBtn {
+  border: none;
+  background-color: #007bff;
+  color: white;
+}

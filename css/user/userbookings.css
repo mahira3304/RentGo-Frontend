@@ -1,0 +1,39 @@
+.booking-wrapper {
+  background-color: #f3efd9;
+  min-height: 100vh;
+}
+
+.search-btn {
+  background-color: #4a5d23;
+  border: none;
+}
+
+.search-btn:hover {
+  background-color: #3c4c1c;
+}
+
+.booking-table th {
+  background-color: #d9b56f;
+  color: white;
+  white-space: nowrap;
+}
+
+.booking-table td {
+  white-space: nowrap;
+}
+
+.status-badge {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.cancel-btn {
+  background-color: #d39b2a;
+  border: none;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.cancel-btn:hover {
+  background-color: #b88522;
+}

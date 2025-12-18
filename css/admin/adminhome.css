@@ -1,0 +1,80 @@
+.stat-card {
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.3);
+}
+.stat-card-title {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.stat-card-value {
+  font-size: 32px;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease;
+}
+
+.stat-card:hover .stat-card-value {
+  text-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+.stat-card-icon {
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.stat-card:hover .stat-card-icon {
+  transform: rotate(8deg) scale(1.15);
+  opacity: 1;
+}
+
+
+.card-green {
+  background: var(--main-green);
+}
+
+.card-yellow {
+  background: var(--secondary-yellow);
+}
+
+.card-blue {
+  background: rgb(52, 80, 52);
+}
+
+.card-red {
+  background:  var(--main-yellow);
+}
+.chart-box {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.pie-text-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pie-text-label {
+  color: #6c757d;
+}
+.dashboard-bg {
+  background: #d2cdaa;
+  min-height: 88vh;
+}

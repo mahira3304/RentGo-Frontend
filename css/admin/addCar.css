@@ -1,0 +1,94 @@
+.addcar-page {
+  background: #e5e5e5;
+  min-height: 100vh;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.title {
+  font-weight: bold;
+  color: var(--main-green);
+}
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+.toggle-group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.image-box {
+  width: 100%;
+  height: 200px;
+  background: #bfbfbf;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.input-box {
+  margin-top: 12px;
+  background: #c8c8c8;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+#mileage-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 3px;
+  color: #444;
+}
+.form-switch .form-check-input {
+    width: 3.5rem;       
+    height: 1.5rem;    
+    background-size: 1.5rem 1.5rem;  
+    cursor: pointer;
+}
+
+
+/* TEXTAREA BOX */
+.textarea-box {
+  margin-top: 12px;
+  background: #c8c8c8;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  height: 90px;
+}
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.add-btn {
+  background: var( --main-yellow);
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.add-btn:hover {
+  background: var( --main-yellow);
+}
+#details,#carselect{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.addcar-page h3,
+.addcar-page h4,
+.addcar-page h5,
+.addcar-page label {
+  text-align: left !important;
+}

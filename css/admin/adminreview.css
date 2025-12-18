@@ -1,0 +1,33 @@
+.search-row {
+  margin-bottom: 20px;
+}
+.search-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+.search-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.search-btn {
+  background: var(--main-green);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.filter-dropdown {
+  background: var(--main-green);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 110px;
+  font-size: 15px;
+}
+
+.filter-dropdown option {
+  color: white;
+}

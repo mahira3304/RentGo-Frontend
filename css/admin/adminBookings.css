@@ -1,0 +1,88 @@
+.booking-page {
+  background: #d6d6bd !important; 
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+  
+.search-row {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.search-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.search-btn {
+  background: var(--main-green);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.filter-dropdown {
+  background: var(--main-green);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;  
+  font-size:15px;
+}
+
+.filter-dropdown option {
+  color: white;
+}
+
+.table-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-wrapper .table-responsive {
+  border-radius: 10px;
+  padding: 10px;
+}
+.table-wrapper .booking-table tbody tr td {
+  background-color: #b6ab66 !important;
+}
+
+.booking-table thead th {
+  background-color: var(--main-yellow);
+  color: white;
+}
+
+
+.booking-table th,
+.booking-table td {
+  vertical-align: middle;
+  padding: 12px;
+}
+
+.status-booked {
+  background: var(--secondary-green);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+
+.status-cancelled {
+  background: #9b3b3b;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+
+.view-btn {
+  background:var(--main-green);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+}

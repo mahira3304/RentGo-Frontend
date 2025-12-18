@@ -1,0 +1,85 @@
+.review-page {
+  min-height: 88vh;
+  background: #cabf98;
+  display: flex;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.review-card {
+  background: var(--main-yellow);
+  color: white;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 480px;
+  width: 100%;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.avatar-circle {
+  background: #eee6ff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-icon {
+  font-size: 28px;
+  color: #5a3ea1;
+}
+
+.user-info h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.user-info p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+.stars {
+  margin: 20px 0;
+  font-size: 22px;
+  color: #ffd54f;
+  text-align: center;
+}
+.review-box {
+  background: #f2f2f2;
+  color: #000;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.delete-btn {
+  background: #a53c2a;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  background: var(--main-green);
+  border: none;
+  padding: 6px 20px;
+  border-radius: 8px;
+}
+.delete-btn:hover{
+  background: #6e2316;
+}
+.close-btn:hover {
+  background: #1e352a;
+}

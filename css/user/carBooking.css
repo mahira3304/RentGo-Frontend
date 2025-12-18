@@ -1,0 +1,50 @@
+
+.booking-page {
+  background: #f5eec4;
+  width: 50%;
+}
+.car-card {
+  border-radius: 12px;
+}
+
+.car-image {
+  border-radius: 10px;
+}
+
+.car-price {
+  color: #8c3aff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.time-box {
+  background: #ebdf98;
+  border-radius: 12px !important;
+}
+
+.time-input {
+  width: 70px;
+  text-align: center;
+}
+
+.time-colon {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+.period-select {
+  width: 80px;
+}
+.summary-card {
+  border-radius: 12px;
+}
+
+
+.confirm-btn {
+  background: #b88718;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #967013;
+}

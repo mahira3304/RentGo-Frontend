@@ -1,0 +1,109 @@
+
+.popular-section {
+  background: var(--main-green);
+  padding: 4rem 0;
+  color: white;
+}
+
+.popular-header {
+  padding: 0 0.5rem;
+}
+
+.popular-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.view-all {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rental-card {
+  background: var(--main-beige);
+  border-radius: 14px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.rental-img {
+  width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  padding: 1.2rem;
+  color: black;
+}
+
+.car-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.car-type {
+  margin-top: -6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.price-block {
+  text-align: right;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--secondary-blue);
+}
+
+.per-day {
+  margin-top: -6px;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.available {
+  color: var(--secondary-green);
+  font-weight: 700;
+  margin-top: 0.6rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #333;
+
+  span{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
+}
+
+.details-btn {
+  background: var(--main-yellow);
+  border: none;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.details-btn:hover {
+  background: #926d23;
+}

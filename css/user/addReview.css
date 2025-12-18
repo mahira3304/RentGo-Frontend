@@ -1,0 +1,58 @@
+.rating-container {
+  height: 100vh;
+  background: #f6edbe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.stars {
+  margin-bottom: 20px;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}
+
+.feedback-box {
+  width: 350px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.submit-btn {
+  width: 350px;
+  background-color: var(--main-yellow);
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #a77916;
+}

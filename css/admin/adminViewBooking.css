@@ -1,0 +1,43 @@
+.booking-page {
+  min-height: 88vh;
+  background: #b7b06a;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.booking-card {
+  max-width: 900px;
+  background: #bdb88b;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.booking-title {
+  font-weight: 600;
+  color: #2f3d2f;
+  letter-spacing: 1px;
+}
+
+.booking-content p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #2f3327;
+  margin-bottom: 10px;
+}
+
+.booking-content span {
+  font-weight: 500;
+}
+
+.confirm-btn {
+  background: #2f3d2f;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.confirm-btn:hover {
+  background: #444929;
+}
