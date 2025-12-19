@@ -20,7 +20,7 @@ export default function UserViewBookings()  {
 
       const data = await res.json();
       const booking = data.bookings
-      setuserbooking(booking)
+      setbooking(booking)
       if(!data.success){
         alert("something went wrong!!!")
       }
