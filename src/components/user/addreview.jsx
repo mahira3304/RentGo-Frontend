@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
-import "../../../css/user/addreview.css";
+import "../../../css/user/addReview.css";
 import { useNavigate } from "react-router";
 
 export default function AddReview () {
