@@ -1,4 +1,4 @@
-import UserForm from "@/components/user/UserForm";
+import UserForm from "../user/userForm";
 import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 
