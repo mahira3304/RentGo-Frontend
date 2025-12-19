@@ -19,20 +19,23 @@ export default function UserViewBookings()  {
       });
 
       const data = await res.json();
-      console.log("API RESPONSE:", data);
-
-      if (data.success) {
-        if (Array.isArray(data.bookings)) {
-          setbooking(data.bookings);
-        } else if (data.bookings) {
-          setbooking([data.bookings]);
-        } else {
-          setbooking([]);
-        }
-      } else {
-        setbooking([]);
-        alert("Something went wrong!");
+      const booking = data.bookings
+      setuserbooking(booking)
+      if(!data.success){
+        alert("something went wrong!!!")
       }
+      // if (data.success) {
+      //   if (Array.isArray(data.bookings)) {
+      //     setbooking(data.bookings);
+      //   } else if (data.bookings) {
+      //     setbooking([data.bookings]);
+      //   } else {
+      //     setbooking([]);
+      //   }
+      // } else {
+      //   setbooking([]);
+      //   alert("Something went wrong!");
+      // }
     } catch (error) {
       console.log(error);
       setbooking([]);
