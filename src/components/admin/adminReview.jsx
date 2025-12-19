@@ -1,20 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Table, Form, Button, InputGroup, Dropdown } from "react-bootstrap";
-import "../../../css/admin/adminReview.css";
+import "../../../css/admin/adminreview.css";
 import { useNavigate } from "react-router-dom";
 
 export default function AdminReview() {
   const [userreview,setuserreview]= useState([])
   const navigate = useNavigate()
-  // const reviews = [
-  //   { id: 1, name: "Michael", email: "abc@gmail.com", date: "04/17/23" },
-  //   { id: 2, name: "Anna", email: "abc@gmail.com", date: "04/17/23" },
-  //   { id: 3, name: "Thomas", email: "abc@gmail.com", date: "04/17/23" },
-  //   { id: 4, name: "Michelle", email: "abc@gmail.com", date: "04/17/23" },
-  //   { id: 5, name: "Andrea", email: "abc@gmail.com", date: "04/17/23" },
-  //   { id: 6, name: "Philip", email: "abc@gmail.com", date: "04/17/23" },
-  // ];
+ 
 
 
   useEffect(()=>{
