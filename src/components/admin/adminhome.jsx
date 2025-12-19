@@ -24,13 +24,15 @@ const AdminHome = () => {
 
         const data = await res.json();
         console.log(data);
+        const avl = data.cars
+        const mnt = data.cars
 
         if (data.success) {
           setStats({
             totalCars: data.totalCars,
             totalBookings: data.totalBookings,
-            availableCars: data.availableCars,
-            maintenanceCars: data.maintenanceCars
+            availableCars: avl.available,
+            maintenanceCars: avl.maintenance
           });
         }
       } catch (error) {
@@ -41,7 +43,7 @@ const AdminHome = () => {
     dashboard();
   }, []);
 
-  
+
   return (
     <div className="container-fluid p-4 dashboard-bg">
 
