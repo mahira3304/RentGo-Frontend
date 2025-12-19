@@ -195,7 +195,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import "../../../css/admin/addcar.css";
+import "../../../css/admin/addCar.css";
 import { useParams } from "react-router";
 
 export default function EditCar() {
