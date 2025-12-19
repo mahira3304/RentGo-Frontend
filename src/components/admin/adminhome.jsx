@@ -24,15 +24,14 @@ const AdminHome = () => {
 
         const data = await res.json();
         console.log(data);
-        const avl = data.cars
-        const mnt = data.cars
+     
 
         if (data.success) {
           setStats({
             totalCars: data.totalCars,
             totalBookings: data.totalBookings,
-            availableCars: avl.available,
-            maintenanceCars: avl.maintenance
+            availableCars: data.available,
+            maintenanceCars: data.maintenance
           });
         }
       } catch (error) {
