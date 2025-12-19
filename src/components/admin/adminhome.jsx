@@ -2,34 +2,57 @@ import "../../../css/admin/adminhome.css";
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 import { FaClipboardList, FaCarAlt, FaTools } from "react-icons/fa";
 import { IoCarSportSharp } from "react-icons/io5";
+import { useEffect, useState } from "react";
+
 
 const AdminHome = () => {
- 
-  const barData = [
-    { day: "Sun", rent: 60, revenue: 80 },
-    { day: "Mon", rent: 40, revenue: 70 },
-    { day: "Tue", rent: 50, revenue: 60 },
-    { day: "Wed", rent: 30, revenue: 50 },
-    { day: "Thu", rent: 60, revenue: 90 },
-    { day: "Fri", rent: 20, revenue: 40 },
-    { day: "Sat", rent: 60, revenue: 60 },
-  ];
 
-  const pieData = [
-    { name: "Total Rent", value: 81, color: "#E74C3C" },
-    { name: "Customer Growth", value: 22, color: "#2ECC71" },
-    { name: "Total Revenue", value: 62, color: "#3498DB" },
-  ];
+  const [stats, setStats] = useState({
+    totalCars: 0,
+    totalBookings: 0,
+    availableCars: 0,
+    maintenanceCars: 0
+  });
 
+  useEffect(() => {
+    const dashboard = async () => {
+      try {
+        const res = await fetch(
+          "https://rentgo-backend.onrender.com/admin/dashboard",
+          { credentials: "include" }
+        );
+
+        const data = await res.json();
+        console.log(data);
+
+        if (data.success) {
+          setStats({
+            totalCars: data.totalCars,
+            totalBookings: data.totalBookings,
+            availableCars: data.availableCars,
+            maintenanceCars: data.maintenanceCars
+          });
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    dashboard();
+  }, []);
+
+  
   return (
     <div className="container-fluid p-4 dashboard-bg">
 
       <div className="row g-4 mb-5">
 
+     
+
         <div className="col-md-3">
           <StatCard
             title="Total Orders"
-            value="75"
+            value={stats.totalBookings}
             cardClass="card-green"
             icon={<FaClipboardList size={45} />}
           />
@@ -38,7 +61,7 @@ const AdminHome = () => {
         <div className="col-md-3">
           <StatCard
             title="Total Cars"
-            value="75"
+            value={stats.totalCars}
             cardClass="card-yellow"
             icon={<FaCarAlt size={45} />}
           />
@@ -47,7 +70,7 @@ const AdminHome = () => {
         <div className="col-md-3">
           <StatCard
             title="Available Cars"
-            value="75"
+            value={stats.availableCars}
             cardClass="card-blue"
             icon={<IoCarSportSharp size={45} />}
           />
@@ -56,7 +79,7 @@ const AdminHome = () => {
         <div className="col-md-3">
           <StatCard
             title="In Maintenance"
-            value="75"
+            value={stats.maintenanceCars}
             cardClass="card-red"
             icon={<FaTools size={45} />}
           />
@@ -64,7 +87,7 @@ const AdminHome = () => {
 
       </div>
 
-      <div className="row g-4">
+      {/* <div className="row g-4">
 
         
         <div className="col-md-6">
@@ -120,9 +143,9 @@ const AdminHome = () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
-      </div>
+      {/* </div> */}
     </div>
   );
 };
