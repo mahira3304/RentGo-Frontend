@@ -68,7 +68,7 @@ export default function AdminReview() {
                 {/* <th>ID</th> */}
                 <th>Customer</th>
                 <th>Email</th>
-                <th>date</th>
+                {/* <th>date</th> */}
                 <th>Action</th>
               </tr>
             </thead>
@@ -79,7 +79,7 @@ export default function AdminReview() {
                   {/* <td>{item.id}</td> */}
                   <td>{item.name}</td>
                   <td>{item.email}</td>
-                  <td>{item.date}</td>
+                  {/* <td>{item.date}</td> */}
                   <td>
                     <Link className="view-btn" as={Link} to={`/admin/viewreviews/${item.id}`}>View</Link>
                   </td>

@@ -80,7 +80,7 @@ export default function UserViewBookings()  {
             </tr>
           </thead>
           <tbody>
-            {userbooking?.map((item,index) => (
+            {userbooking?.map((item) => (
               <tr key={item.id}>
                 <td>{item.carName}</td>
                 <td>₹{item.totalPrice}.00</td>
