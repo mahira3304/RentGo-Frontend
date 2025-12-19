@@ -52,13 +52,13 @@ useEffect(() => {
             <Nav.Link as={Link} to="/user/aboutus">About Us</Nav.Link>
 
             <Nav.Link as={Link} to="/user/profile" className="profile-wrapper">
-  {/* {user?.profilePhoto && ( */}
+  {user?.profilePhoto && (
     <img
       src={`https://res.cloudinary.com/dyokhs4yf/image/upload/${user.profilePhoto}`}
       alt="Profile"
       className="profile-avatar"
     />
-  {/* )} */}
+   )} 
 </Nav.Link>
 
 
