@@ -85,7 +85,7 @@ export default function UserViewBookings()  {
                 <td>{item.pickupDate},{item.pickupTime}</td>
                 <td>{item.returnDate},{item.returnTime}</td>
                 <td>
-                  <Badge bg="success" className="status-badge">
+                  <Badge bg="success" className="status-badge" defaultValue="Booked">
                     {(item.status?"booked":"cancelled")}
                   </Badge>
                 </td>

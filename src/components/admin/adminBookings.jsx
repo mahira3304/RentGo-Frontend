@@ -115,7 +115,7 @@ const AdminBookings = () => {
                       className={item.status ? "status-booked" : "status-cancelled"}
                       onClick={() => handleStatusClick(item._id, index)}
                       disabled={!item.status}
-                      // defaultValue={}
+                      // defaultValue="Booked"
                     >
                       {item.status ? "Booked" : "Cancelled"}
                     </Button>
