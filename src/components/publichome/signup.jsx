@@ -8,7 +8,7 @@ export default function SignUp() {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    const res = await fetch("http://localhost:3000/register/user", {
+    const res = await fetch("https://rentgo-backend.onrender.com/register/user", {
       method: "POST",
       credentials: "include",
       body: formData,

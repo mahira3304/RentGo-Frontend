@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import "../../../css/root.css";
 import "../../../css/user/navbar.css"
 import { useEffect, useState } from "react";
+import logoImg from "../../assets/logo.png"
 
 const UserNavBar = () => {
 
@@ -34,7 +35,7 @@ useEffect(() => {
       <Container>
 
         <Navbar.Brand as={Link} to="/user">
-          <img src="/src/assets/logo.png" id="logoId" alt="RentGo Logo" />
+          <img src={logoImg} id="logoId" alt="RentGo Logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -51,13 +52,13 @@ useEffect(() => {
             <Nav.Link as={Link} to="/user/aboutus">About Us</Nav.Link>
 
             <Nav.Link as={Link} to="/user/profile" className="profile-wrapper">
-  {user?.profilePhoto && (
+  {/* {user?.profilePhoto && ( */}
     <img
       src={`https://res.cloudinary.com/dyokhs4yf/image/upload/${user.profilePhoto}`}
       alt="Profile"
       className="profile-avatar"
     />
-  )}
+  {/* )} */}
 </Nav.Link>
 
 
