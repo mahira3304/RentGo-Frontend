@@ -20,7 +20,7 @@ export default function AdminReview() {
   useEffect(()=>{
     const getReviews = async()=> {
       try {
-          const res = await fetch(`http://localhost:3000/admin/reviews`,
+          const res = await fetch(`https://rentgo-backend.onrender.com/admin/reviews`,
             {credentials: "include"}
           );
           const data = await res.json();

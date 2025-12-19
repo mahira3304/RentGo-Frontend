@@ -27,7 +27,7 @@ export default function UserLogin() {
         e.preventDefault();
 
         try {
-            const res =await fetch("http://localhost:3000/login/user",{
+            const res =await fetch("https://rentgo-backend.onrender.com/login/user",{
                 method:"POST",
                 credentials:"include",
                 headers: { "Content-Type": "application/json" },

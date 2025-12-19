@@ -78,7 +78,7 @@ export default function PopularCars({role}) {
  useEffect(() => {
     async function getPopulardata() {
       try {
-        const res = await fetch("http://localhost:3000/public/cars");
+        const res = await fetch("https://rentgo-backend.onrender.com/public/cars");
         const data = await res.json();
 
         // show only first 3 cars

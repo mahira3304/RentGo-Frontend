@@ -16,7 +16,7 @@ const navigate=useNavigate()
     const formData = new FormData(e.target);
    
     try {
-      const res = await fetch("http://localhost:3000/admin/addCar", {
+      const res = await fetch("https://rentgo-backend.onrender.com/admin/addCar", {
         method: "POST",
         credentials: "include",
         body: formData

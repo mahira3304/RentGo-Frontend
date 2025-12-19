@@ -14,7 +14,7 @@ export default function UserViewBookings()  {
   useEffect(() => {
   const getUserBookings = async () => {
     try {
-      const res = await fetch("http://localhost:3000/user/bookings", {
+      const res = await fetch("https://rentgo-backend.onrender.com/user/bookings", {
         credentials: "include",
       });
 

@@ -21,7 +21,7 @@ const UserProfile = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3000/logout/user", {
+      const res = await fetch("https://rentgo-backend.onrender.com/logout/user", {
         method: "POST",
         credentials: "include",
       });
@@ -45,7 +45,7 @@ const UserProfile = () => {
 //     if (!window.confirm("Do you really want to delete your account?")) return;
 
 //     try {
-//         const res = await fetch(`http://localhost:3000/user/delete/${userId}`, {
+//         const res = await fetch(`https://rentgo-backend.onrender.com/user/delete/${userId}`, {
 //             method: "DELETE",       // better to use DELETE method
 //             credentials: "include"
 //         });
@@ -69,7 +69,7 @@ const UserProfile = () => {
 
   useEffect(() => {
     async function fetchProfile() {
-      const res = await fetch("http://localhost:3000/user/profile", {
+      const res = await fetch("https://rentgo-backend.onrender.com/user/profile", {
         credentials: "include",
       });
       const data = await res.json();

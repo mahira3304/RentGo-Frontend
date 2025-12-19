@@ -12,7 +12,7 @@ const AdminBookings = () => {
   useEffect(()=>{
     const getAdminBookings = async()=> {
       try {
-          const res = await fetch(`http://localhost:3000/admin/bookings`,
+          const res = await fetch(`https://rentgo-backend.onrender.com/admin/bookings`,
             {credentials: "include"}
           );
           const data = await res.json();
@@ -39,7 +39,7 @@ const AdminBookings = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/admin/cancel-booking/${bookingId}`,
+        `https://rentgo-backend.onrender.com/admin/cancel-booking/${bookingId}`,
         {
           method: "POST",
           credentials: "include",

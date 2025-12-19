@@ -19,7 +19,7 @@ export default function AddReview () {
         }
 
         try {
-            const res =await fetch("http://localhost:3000/user/submitreview",{
+            const res =await fetch("https://rentgo-backend.onrender.com/user/submitreview",{
                 method:"POST",
                 credentials:"include",
                 headers: { "Content-Type": "application/json" },

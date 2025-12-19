@@ -9,7 +9,7 @@ export default function EditProfile() {
   useEffect(() => {
     async function fetchProfile() {
       try {
-        const res = await fetch("http://localhost:3000/user/profile", {
+        const res = await fetch("https://rentgo-backend.onrender.com/user/profile", {
           credentials: "include",
         });
         const data = await res.json();
@@ -31,7 +31,7 @@ export default function EditProfile() {
     const formData = new FormData(e.target);
 
     try {
-      const res = await fetch("http://localhost:3000/user/profile", {
+      const res = await fetch("https://rentgo-backend.onrender.com/user/profile", {
         method: "POST", 
         credentials: "include",
         body: formData,

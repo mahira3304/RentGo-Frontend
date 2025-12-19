@@ -12,7 +12,7 @@ export default function AdminViewReview() {
   useEffect(()=>{
       const getReviews = async()=> {
         try {
-            const res = await fetch(`http://localhost:3000/admin/viewreviews/${id}`,
+            const res = await fetch(`https://rentgo-backend.onrender.com/admin/viewreviews/${id}`,
               {credentials: "include"}
             );
             const data = await res.json();
@@ -37,7 +37,7 @@ export default function AdminViewReview() {
         alert("do you want to delete?")
 
         try {
-            const res =await fetch(`http://localhost:3000/admin/deletereview/${id}`,{
+            const res =await fetch(`https://rentgo-backend.onrender.com/admin/deletereview/${id}`,{
                 method:"POST",
                 credentials:"include"
 

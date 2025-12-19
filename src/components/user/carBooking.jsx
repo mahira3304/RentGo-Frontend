@@ -15,7 +15,7 @@ export default function CarBooking() {
   useEffect(()=>{
     async function getcardetails() {
       try {
-        const res = await fetch(`http://localhost:3000/user/booking/${id}`,{credentials: "include"})
+        const res = await fetch(`https://rentgo-backend.onrender.com/user/booking/${id}`,{credentials: "include"})
         const data =await res.json()
         const car = data.car
         console.log(car)
@@ -46,7 +46,7 @@ export default function CarBooking() {
   };
 
   try {
-    const res = await fetch(`http://localhost:3000/user/booking/${id}`, {
+    const res = await fetch(`https://rentgo-backend.onrender.com/user/booking/${id}`, {
       method: "POST",
       credentials: "include",
       headers: {

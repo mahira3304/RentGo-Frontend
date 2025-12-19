@@ -21,7 +21,7 @@
 //   useEffect(() => {
 //       async function getCarData() {
 //         try {
-//           const res = await fetch(`http://localhost:3000/admin/carDetails/${id}`);
+//           const res = await fetch(`https://rentgo-backend.onrender.com/admin/carDetails/${id}`);
 //           const data = await res.json();
 //           const car = data.car[0]
 //           setCarData(car);
@@ -211,7 +211,7 @@ export default function EditCar() {
     // Fetch existing car data for editing
     async function getCarData() {
       try {
-        const res = await fetch(`http://localhost:3000/public/carDetails/${id}`);
+        const res = await fetch(`https://rentgo-backend.onrender.com/public/carDetails/${id}`);
         const data = await res.json();
         const car = data.car[0];
         setCarData(car); // Set the fetched data to state
@@ -234,7 +234,7 @@ export default function EditCar() {
     // Update backend with the modified car data
     try {
       const response = await fetch(
-        `http://localhost:3000/admin/editdetails/${id}`,
+        `https://rentgo-backend.onrender.com/admin/editdetails/${id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

@@ -14,7 +14,7 @@ const UserNavBar = () => {
 useEffect(() => {
   async function fetchProfile() {
     try {
-      const res = await fetch("http://localhost:3000/user/profile", {
+      const res = await fetch("https://rentgo-backend.onrender.com/user/profile", {
         credentials: "include",
       });
       const data = await res.json();

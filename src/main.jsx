@@ -63,7 +63,7 @@ const appRoutes = createBrowserRouter([
   },
   {                     
     path:('/user'),
-    element:<Authentication backendURL="http://localhost:3000/user/check" pageURL="/login/user" />,
+    element:<Authentication backendURL="https://rentgo-backend.onrender.com/user/check" pageURL="/login/user" />,
     children:[
       {
         element:<UserHome/>,
@@ -106,7 +106,7 @@ const appRoutes = createBrowserRouter([
   },
   {
     path:('/admin'),
-    element:<Authentication backendURL="http://localhost:3000/admin/check" pageURL="/login/admin"/>,
+    element:<Authentication backendURL="https://rentgo-backend.onrender.com/admin/check" pageURL="/login/admin"/>,
     children:[
       {
         element:<Admin/>,

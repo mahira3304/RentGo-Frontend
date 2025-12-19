@@ -19,7 +19,7 @@ const AdminNavBar = () => {
         e.preventDefault();
 
         try {
-            const res =await fetch("http://localhost:3000/logout/admin",{
+            const res =await fetch("https://rentgo-backend.onrender.com/logout/admin",{
                 method:"POST",
                 credentials:"include"
             })

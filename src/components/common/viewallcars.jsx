@@ -22,7 +22,7 @@ export default function CarPage({ role }) {
   useEffect(() => {
     async function getCarData() {
       try {
-        const res = await fetch("http://localhost:3000/public/cars");
+        const res = await fetch("https://rentgo-backend.onrender.com/public/cars");
         const data = await res.json();
         setCarData(data.cars);
       } catch (error) {

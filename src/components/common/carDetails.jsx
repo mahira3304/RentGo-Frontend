@@ -14,7 +14,7 @@ export default function CarDetails({role}) {
     useEffect(() => {
       async function getCarData() {
         try {
-          const res = await fetch(`http://localhost:3000/public/carDetails/${id}`);
+          const res = await fetch(`https://rentgo-backend.onrender.com/public/carDetails/${id}`);
           const data = await res.json();
           const car = data.car[0]
           setCarData(car);
@@ -35,7 +35,7 @@ export default function CarDetails({role}) {
         alert("do you want to delete?")
 
         try {
-            const res =await fetch(`http://localhost:3000/admin/deletecar/${id}`,{
+            const res =await fetch(`https://rentgo-backend.onrender.com/admin/deletecar/${id}`,{
                 method:"POST",
                 credentials:"include"
 

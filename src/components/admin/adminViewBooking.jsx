@@ -22,7 +22,7 @@ const AdminViewBooking=()=> {
     useEffect(()=>{
         const getBooking = async()=> {
           try {
-              const res = await fetch(`http://localhost:3000/admin/viewbooking/${id}`,
+              const res = await fetch(`https://rentgo-backend.onrender.com/admin/viewbooking/${id}`,
                 {credentials: "include"}
               );
               const data = await res.json();

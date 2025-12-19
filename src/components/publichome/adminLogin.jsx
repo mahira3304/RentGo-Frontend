@@ -25,7 +25,7 @@ export default function AdminLogin() {
         e.preventDefault();
 
         try {
-            const res =await fetch("http://localhost:3000/login/admin",{
+            const res =await fetch("https://rentgo-backend.onrender.com/login/admin",{
                 method:"POST",
                 credentials:"include",
                 headers: { "Content-Type": "application/json" },
