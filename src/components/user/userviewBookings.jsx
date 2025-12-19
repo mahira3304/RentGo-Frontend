@@ -80,26 +80,24 @@ export default function UserViewBookings()  {
               {/* <th>Action</th> */}
             </tr>
           </thead>
+
+          
           <tbody>
-            {userbooking?.map((item) => (
+            {Array.isArray(userbooking) && userbooking.map((item) => (
               <tr key={item.id}>
                 <td>{item.carName}</td>
                 <td>₹{item.totalPrice}.00</td>
-                <td>{item.pickupDate},{item.pickupTime}</td>
-                <td>{item.returnDate},{item.returnTime}</td>
+                <td>{item.pickupDate}, {item.pickupTime}</td>
+                <td>{item.returnDate}, {item.returnTime}</td>
                 <td>
-                  <Badge bg="success" className="status-badge" defaultValue="Booked">
-                    {(item.status?"booked":"cancelled")}
+                  <Badge bg={item.status ? "success" : "danger"}>
+                    {item.status ? "Booked" : "Cancelled"}
                   </Badge>
                 </td>
-                {/* <td>
-                  <Button size="sm" className="cancel-btn">
-                    Cancel
-                  </Button>
-                </td> */}
               </tr>
             ))}
           </tbody>
+
         </Table>
       </div>
     </Container>
